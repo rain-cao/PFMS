@@ -1,0 +1,108 @@
+﻿/*设置最外层页面字体和滚动条不可见*/
+body {
+    font-family: 'Microsoft YaHei';
+    overflow:hidden;
+}
+
+/*设置顶端DIV样式*/
+.topStyle {
+    background-color: #2F4050;
+    width: 100%;
+    height: 80px;
+}
+/*当光标放在左侧菜单栏影藏显示按钮上时，按钮的背景颜色*/
+.div_hide_menu:hover {
+    background-color: #243646;
+}
+/*左侧菜单栏显示影藏按钮的DIV样式*/
+.div_hide_menu {
+    width: 45px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+/*左侧菜单栏实现影藏按钮背景图片样式*/
+.img_hide_menu {
+    width: 25px;
+    height: 30px;
+}
+/*网站名称DIV样式，即包含“治工具管理系统”的DIV*/
+.div_title {
+    width: 135px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+/*设置第一阶菜单(顶部菜单)容器DIV样式*/
+.div_main_menu {
+    width: auto;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 180px;
+    text-align: center;
+}
+
+/*设置左侧菜单栏DIV样式*/
+.leftStyle {
+    background-color: #243646;
+    width: 180px;
+    height: auto;
+    text-align: center;
+    float: left;
+}
+
+/*设置右侧内容页DIV样式*/
+.rightStyle {
+    background-color: #F3F3F4;
+    width: auto;
+    height: auto;
+    margin-left: 180px;
+    text-align: center;
+}
+/*内容页iframe框架样式*/
+.iframe_main {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: none;
+    overflow: auto;
+}
+
+/*控制未访问时的显示效果*/
+/*span:link{
+
+}*/
+
+/*获得聚焦对象的元素，并设置聚焦时的显示效果*/
+/*span:focus {
+    
+}*/
+
+/*鼠标悬停和划过时的显示效果*/
+span:hover {
+    background-color: #C15A34;
+    cursor: pointer;
+}
+
+/*控制按钮被点击时的显示效果*/
+span:active {
+    background-color: #FE6229;
+}
+
+/*访问过后的显示效果*/
+/*span:visited {
+    background-color: #FE6229;
+}*/
+
+/*用于动态添加span样式，点击span标签时操作*/
+.pad {
+    background-color: #FE6229;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}

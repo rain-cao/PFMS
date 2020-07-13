@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/eOA_WebService/Service1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/eOA_WebService/Service1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/eOA_WebService/Service1">
+      <s:element name="ReturnRework_Value">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Taskid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnRework_ValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnRework_ValueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnRework_ByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Taskid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnRework_ByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnRework_ByIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnRework_ByWorkSerial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Work_Serial" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnRework_ByWorkSerialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnRework_ByWorkSerialResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_Value">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Taskid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_ValueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnQDR_ValueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_Ta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Jizhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_TaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnQDR_TaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RMA_KaoQin">
+        <s:complexType />
+      </s:element>
+      <s:element name="RMA_KaoQinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RMA_KaoQinResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RMA_KaoQin_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="var_dept" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RMA_KaoQin_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RMA_KaoQin_NewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RMA_User">
+        <s:complexType />
+      </s:element>
+      <s:element name="RMA_UserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RMA_UserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ePRData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Work_ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ePRDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ePRDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_eOAUserData">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_eOAUserDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_eOAUserDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_eOAUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_Hrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_eOAUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_eOAUserNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_New_Ta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Jizhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_New_TaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnQDR_New_TaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_CTOS_Ta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Jizhong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnQDR_CTOS_TaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnQDR_CTOS_TaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnOverdueGoods">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Taskid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnOverdueGoodsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnOverdueGoodsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnKQS">
+        <s:complexType />
+      </s:element>
+      <s:element name="ReturnKQSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnKQSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCardId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCardIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByCardIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCardId_IC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserByCardId_ICResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserByCardId_ICResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Human_Resources">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Human_ResourcesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Human_ResourcesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_HumanQuit_Statistics">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_HumanQuit_StatisticsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_HumanQuit_StatisticsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetATCUserByCardId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cardid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetATCUserByCardIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetATCUserByCardIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_eOAUser">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_eOAUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_eOAUserResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeteOAUserForDCC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeteOAUserForDCCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeteOAUserForDCCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeteOAUserManagerForDCC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeteOAUserManagerForDCCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeteOAUserManagerForDCCResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForESOP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_Fac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process_Monitoring" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Var_material" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="et" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForESOPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewQDR_ForESOPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForIMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_SubOrder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process_Monitoring" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForIMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerComplaintForm_ForIMSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForIMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process_Monitoring" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForIMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewQDR_ForIMSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForFQC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForFQCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewQDR_ForFQCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForNPI">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_material" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNewQDR_ForNPIResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNewQDR_ForNPIResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeteOA_Group">
+        <s:complexType />
+      </s:element>
+      <s:element name="GeteOA_GroupResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeteOA_GroupResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_KQUserData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="var_Hrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_KQUserDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_KQUserDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForESOP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process_Monitoring" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Var_SubOrder" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="et" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForESOPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerComplaintForm_ForESOPResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bt" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="et" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintFormResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerComplaintFormResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForFQC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MACHINE_MODEL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerComplaintForm_ForFQCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerComplaintForm_ForFQCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChassis_ES_Bug">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_Liaohao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChassis_ES_BugResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChassis_ES_BugResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChassis_ES_Bug_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Var_Liaohao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Var_Status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChassis_ES_Bug_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChassis_ES_Bug_NewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReturnRework_ValueSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnRework_Value" />
+  </wsdl:message>
+  <wsdl:message name="ReturnRework_ValueSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnRework_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnRework_ByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnRework_ByID" />
+  </wsdl:message>
+  <wsdl:message name="ReturnRework_ByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnRework_ByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnRework_ByWorkSerialSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnRework_ByWorkSerial" />
+  </wsdl:message>
+  <wsdl:message name="ReturnRework_ByWorkSerialSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnRework_ByWorkSerialResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_ValueSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_Value" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_ValueSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_ValueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_TaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_Ta" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_TaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_TaResponse" />
+  </wsdl:message>
+  <wsdl:message name="RMA_KaoQinSoapIn">
+    <wsdl:part name="parameters" element="tns:RMA_KaoQin" />
+  </wsdl:message>
+  <wsdl:message name="RMA_KaoQinSoapOut">
+    <wsdl:part name="parameters" element="tns:RMA_KaoQinResponse" />
+  </wsdl:message>
+  <wsdl:message name="RMA_KaoQin_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:RMA_KaoQin_New" />
+  </wsdl:message>
+  <wsdl:message name="RMA_KaoQin_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:RMA_KaoQin_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="RMA_UserSoapIn">
+    <wsdl:part name="parameters" element="tns:RMA_User" />
+  </wsdl:message>
+  <wsdl:message name="RMA_UserSoapOut">
+    <wsdl:part name="parameters" element="tns:RMA_UserResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ePRDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ePRData" />
+  </wsdl:message>
+  <wsdl:message name="Get_ePRDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ePRDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_eOAUserData" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_eOAUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_eOAUserName" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_eOAUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_New_TaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_New_Ta" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_New_TaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_New_TaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_CTOS_TaSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_CTOS_Ta" />
+  </wsdl:message>
+  <wsdl:message name="ReturnQDR_CTOS_TaSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnQDR_CTOS_TaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnOverdueGoodsSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnOverdueGoods" />
+  </wsdl:message>
+  <wsdl:message name="ReturnOverdueGoodsSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnOverdueGoodsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnKQSSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnKQS" />
+  </wsdl:message>
+  <wsdl:message name="ReturnKQSSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnKQSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCardIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByCardId" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCardIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByCardIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCardId_ICSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserByCardId_IC" />
+  </wsdl:message>
+  <wsdl:message name="GetUserByCardId_ICSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserByCardId_ICResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Human_ResourcesSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Human_Resources" />
+  </wsdl:message>
+  <wsdl:message name="Get_Human_ResourcesSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Human_ResourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_HumanQuit_StatisticsSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_HumanQuit_Statistics" />
+  </wsdl:message>
+  <wsdl:message name="Get_HumanQuit_StatisticsSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_HumanQuit_StatisticsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetATCUserByCardIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetATCUserByCardId" />
+  </wsdl:message>
+  <wsdl:message name="GetATCUserByCardIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetATCUserByCardIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_eOAUser" />
+  </wsdl:message>
+  <wsdl:message name="Get_eOAUserSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_eOAUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GeteOAUserForDCCSoapIn">
+    <wsdl:part name="parameters" element="tns:GeteOAUserForDCC" />
+  </wsdl:message>
+  <wsdl:message name="GeteOAUserForDCCSoapOut">
+    <wsdl:part name="parameters" element="tns:GeteOAUserForDCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GeteOAUserManagerForDCCSoapIn">
+    <wsdl:part name="parameters" element="tns:GeteOAUserManagerForDCC" />
+  </wsdl:message>
+  <wsdl:message name="GeteOAUserManagerForDCCSoapOut">
+    <wsdl:part name="parameters" element="tns:GeteOAUserManagerForDCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForESOPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForESOP" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForESOPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForESOPResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForIMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForIMS" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForIMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForIMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForIMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForIMS" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForIMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForIMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForFQCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForFQC" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForFQCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForFQCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForNPISoapIn">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForNPI" />
+  </wsdl:message>
+  <wsdl:message name="GetNewQDR_ForNPISoapOut">
+    <wsdl:part name="parameters" element="tns:GetNewQDR_ForNPIResponse" />
+  </wsdl:message>
+  <wsdl:message name="GeteOA_GroupSoapIn">
+    <wsdl:part name="parameters" element="tns:GeteOA_Group" />
+  </wsdl:message>
+  <wsdl:message name="GeteOA_GroupSoapOut">
+    <wsdl:part name="parameters" element="tns:GeteOA_GroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_KQUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_KQUserData" />
+  </wsdl:message>
+  <wsdl:message name="Get_KQUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_KQUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForESOPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForESOP" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForESOPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForESOPResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintFormSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintFormSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForFQCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForFQC" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerComplaintForm_ForFQCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerComplaintForm_ForFQCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChassis_ES_BugSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChassis_ES_Bug" />
+  </wsdl:message>
+  <wsdl:message name="GetChassis_ES_BugSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChassis_ES_BugResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChassis_ES_Bug_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChassis_ES_Bug_New" />
+  </wsdl:message>
+  <wsdl:message name="GetChassis_ES_Bug_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChassis_ES_Bug_NewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="ReturnRework_Value">
+      <wsdl:input message="tns:ReturnRework_ValueSoapIn" />
+      <wsdl:output message="tns:ReturnRework_ValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByID">
+      <wsdl:input message="tns:ReturnRework_ByIDSoapIn" />
+      <wsdl:output message="tns:ReturnRework_ByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByWorkSerial">
+      <wsdl:input message="tns:ReturnRework_ByWorkSerialSoapIn" />
+      <wsdl:output message="tns:ReturnRework_ByWorkSerialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Value">
+      <wsdl:input message="tns:ReturnQDR_ValueSoapIn" />
+      <wsdl:output message="tns:ReturnQDR_ValueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Ta">
+      <wsdl:input message="tns:ReturnQDR_TaSoapIn" />
+      <wsdl:output message="tns:ReturnQDR_TaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin">
+      <wsdl:input message="tns:RMA_KaoQinSoapIn" />
+      <wsdl:output message="tns:RMA_KaoQinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin_New">
+      <wsdl:input message="tns:RMA_KaoQin_NewSoapIn" />
+      <wsdl:output message="tns:RMA_KaoQin_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RMA_User">
+      <wsdl:input message="tns:RMA_UserSoapIn" />
+      <wsdl:output message="tns:RMA_UserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ePRData">
+      <wsdl:input message="tns:Get_ePRDataSoapIn" />
+      <wsdl:output message="tns:Get_ePRDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserData">
+      <wsdl:input message="tns:Get_eOAUserDataSoapIn" />
+      <wsdl:output message="tns:Get_eOAUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserName">
+      <wsdl:input message="tns:Get_eOAUserNameSoapIn" />
+      <wsdl:output message="tns:Get_eOAUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_New_Ta">
+      <wsdl:input message="tns:ReturnQDR_New_TaSoapIn" />
+      <wsdl:output message="tns:ReturnQDR_New_TaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_CTOS_Ta">
+      <wsdl:input message="tns:ReturnQDR_CTOS_TaSoapIn" />
+      <wsdl:output message="tns:ReturnQDR_CTOS_TaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnOverdueGoods">
+      <wsdl:input message="tns:ReturnOverdueGoodsSoapIn" />
+      <wsdl:output message="tns:ReturnOverdueGoodsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnKQS">
+      <wsdl:input message="tns:ReturnKQSSoapIn" />
+      <wsdl:output message="tns:ReturnKQSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId">
+      <wsdl:input message="tns:GetUserByCardIdSoapIn" />
+      <wsdl:output message="tns:GetUserByCardIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId_IC">
+      <wsdl:input message="tns:GetUserByCardId_ICSoapIn" />
+      <wsdl:output message="tns:GetUserByCardId_ICSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Human_Resources">
+      <wsdl:input message="tns:Get_Human_ResourcesSoapIn" />
+      <wsdl:output message="tns:Get_Human_ResourcesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_HumanQuit_Statistics">
+      <wsdl:input message="tns:Get_HumanQuit_StatisticsSoapIn" />
+      <wsdl:output message="tns:Get_HumanQuit_StatisticsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetATCUserByCardId">
+      <wsdl:input message="tns:GetATCUserByCardIdSoapIn" />
+      <wsdl:output message="tns:GetATCUserByCardIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUser">
+      <wsdl:input message="tns:Get_eOAUserSoapIn" />
+      <wsdl:output message="tns:Get_eOAUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserForDCC">
+      <wsdl:input message="tns:GeteOAUserForDCCSoapIn" />
+      <wsdl:output message="tns:GeteOAUserForDCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserManagerForDCC">
+      <wsdl:input message="tns:GeteOAUserManagerForDCCSoapIn" />
+      <wsdl:output message="tns:GeteOAUserManagerForDCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForESOP">
+      <wsdl:input message="tns:GetNewQDR_ForESOPSoapIn" />
+      <wsdl:output message="tns:GetNewQDR_ForESOPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForIMS">
+      <wsdl:input message="tns:GetCustomerComplaintForm_ForIMSSoapIn" />
+      <wsdl:output message="tns:GetCustomerComplaintForm_ForIMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForIMS">
+      <wsdl:input message="tns:GetNewQDR_ForIMSSoapIn" />
+      <wsdl:output message="tns:GetNewQDR_ForIMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForFQC">
+      <wsdl:input message="tns:GetNewQDR_ForFQCSoapIn" />
+      <wsdl:output message="tns:GetNewQDR_ForFQCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForNPI">
+      <wsdl:input message="tns:GetNewQDR_ForNPISoapIn" />
+      <wsdl:output message="tns:GetNewQDR_ForNPISoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GeteOA_Group">
+      <wsdl:input message="tns:GeteOA_GroupSoapIn" />
+      <wsdl:output message="tns:GeteOA_GroupSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_KQUserData">
+      <wsdl:input message="tns:Get_KQUserDataSoapIn" />
+      <wsdl:output message="tns:Get_KQUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForESOP">
+      <wsdl:input message="tns:GetCustomerComplaintForm_ForESOPSoapIn" />
+      <wsdl:output message="tns:GetCustomerComplaintForm_ForESOPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm">
+      <wsdl:input message="tns:GetCustomerComplaintFormSoapIn" />
+      <wsdl:output message="tns:GetCustomerComplaintFormSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForFQC">
+      <wsdl:input message="tns:GetCustomerComplaintForm_ForFQCSoapIn" />
+      <wsdl:output message="tns:GetCustomerComplaintForm_ForFQCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug">
+      <wsdl:input message="tns:GetChassis_ES_BugSoapIn" />
+      <wsdl:output message="tns:GetChassis_ES_BugSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug_New">
+      <wsdl:input message="tns:GetChassis_ES_Bug_NewSoapIn" />
+      <wsdl:output message="tns:GetChassis_ES_Bug_NewSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReturnRework_Value">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByID">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_ByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByWorkSerial">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_ByWorkSerial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Value">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Ta">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_Ta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_KaoQin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin_New">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_KaoQin_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_User">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_User" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ePRData">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_ePRData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserData">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserName">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_New_Ta">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_New_Ta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_CTOS_Ta">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_CTOS_Ta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnOverdueGoods">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnOverdueGoods" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnKQS">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnKQS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetUserByCardId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId_IC">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetUserByCardId_IC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Human_Resources">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_Human_Resources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_HumanQuit_Statistics">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_HumanQuit_Statistics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetATCUserByCardId">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetATCUserByCardId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUser">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserForDCC">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOAUserForDCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserManagerForDCC">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOAUserManagerForDCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForESOP">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForESOP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForIMS">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForIMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForIMS">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForIMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForFQC">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForFQC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForNPI">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForNPI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOA_Group">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOA_Group" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_KQUserData">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_KQUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForESOP">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForESOP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForFQC">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForFQC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetChassis_ES_Bug" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug_New">
+      <soap:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetChassis_ES_Bug_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReturnRework_Value">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_Value" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByID">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_ByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnRework_ByWorkSerial">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnRework_ByWorkSerial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Value">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_Value" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_Ta">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_Ta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_KaoQin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_KaoQin_New">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_KaoQin_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RMA_User">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/RMA_User" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ePRData">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_ePRData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserData">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUserName">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_New_Ta">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_New_Ta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnQDR_CTOS_Ta">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnQDR_CTOS_Ta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnOverdueGoods">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnOverdueGoods" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnKQS">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/ReturnKQS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetUserByCardId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByCardId_IC">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetUserByCardId_IC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Human_Resources">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_Human_Resources" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_HumanQuit_Statistics">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_HumanQuit_Statistics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetATCUserByCardId">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetATCUserByCardId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_eOAUser">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_eOAUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserForDCC">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOAUserForDCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOAUserManagerForDCC">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOAUserManagerForDCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForESOP">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForESOP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForIMS">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForIMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForIMS">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForIMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForFQC">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForFQC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNewQDR_ForNPI">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetNewQDR_ForNPI" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeteOA_Group">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GeteOA_Group" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_KQUserData">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/Get_KQUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForESOP">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForESOP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerComplaintForm_ForFQC">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetCustomerComplaintForm_ForFQC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetChassis_ES_Bug" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChassis_ES_Bug_New">
+      <soap12:operation soapAction="http://tempuri.org/eOA_WebService/Service1/GetChassis_ES_Bug_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://172.21.130.97/eOA_WebService/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://172.21.130.97/eOA_WebService/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

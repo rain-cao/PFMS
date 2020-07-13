@@ -1,0 +1,49 @@
+﻿body {
+    font-family: 'Microsoft YaHei';
+    overflow: hidden;
+}
+
+/*设置左侧内容模块容器样式*/
+.div_leftStyle{
+    float: left;
+    width: 65%;
+    height: auto;
+}
+/*设置左侧内容模块图片样式*/
+.bg_img {
+    width: 100%;
+    height: inherit;
+}
+
+/*设置右侧内容模块容器样式*/
+.div_rightStyle {
+    background-color: #F3F3F4;
+    width: 35%;
+    height: auto;
+    float: right;
+    text-align: center;
+}
+
+/*设置h1标签样式*/
+h1 {
+    color: #282828;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #333;
+}
+
+/*设置表单样式*/
+table {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50%;
+    border: none;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 90%;
+}
+
+td {
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+}

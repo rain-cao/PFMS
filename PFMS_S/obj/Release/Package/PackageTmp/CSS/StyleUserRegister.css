@@ -1,0 +1,30 @@
+﻿body {
+    font-family: 'Microsoft YaHei';
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*设置h1标签样式*/
+h2 {
+    color: #282828;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #333;
+    text-align: center;
+    margin: 10px auto;
+}
+
+/*设置表单样式*/
+table {
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 80%;
+}
+
+td {
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+}
